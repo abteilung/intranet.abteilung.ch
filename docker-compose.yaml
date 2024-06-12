@@ -42,7 +42,7 @@ services:
     directus:
         image: directus/directus:10.12.1
         ports:
-            - '8061:8055'
+            - '8055:8055'
         container_name: abtIntra-directus-master
         volumes:
             - ./start.sh:/start.sh
