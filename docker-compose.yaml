@@ -40,7 +40,7 @@ services:
         image: redis:7
 
     directus:
-        image: directus/directus:10.12.1
+        image: directus/directus:10.13
         ports:
             - '8055:8055'
         container_name: abtIntra-directus-master
