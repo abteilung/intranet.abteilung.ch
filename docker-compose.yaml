@@ -54,7 +54,7 @@ services:
             retries: 10
 
     directus:
-        image: directus/directus:10.13
+        image: directus/directus:10.13.1
         ports:
             - '8055:8055'
         container_name: abtIntra-directus-master
