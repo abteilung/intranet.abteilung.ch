@@ -82,6 +82,16 @@ services:
             ADMIN_PASSWORD: ${ADMIN_PASS}
             PUBLIC_URL: https://${PUBLIC_URL}
             CORS_ENABLED: 'true'
+        healthcheck:
+            test:
+                - CMD
+                - wget
+                - '-q'
+                - '--spider'
+                - 'http://127.0.0.1:8055/server/health'
+            interval: 60s
+            timeout: 10s
+            retries: 5
 
 volumes:
     my_uploads:
