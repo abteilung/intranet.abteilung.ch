@@ -8,7 +8,8 @@ services:
             - '81:80'
         restart: always
         depends_on:
-            - directus
+            directus:
+                condition: service_healthy
         # Optional: Füge healthcheck hinzu, um sicherzustellen, dass Directus bereit ist
         healthcheck:
             test:
