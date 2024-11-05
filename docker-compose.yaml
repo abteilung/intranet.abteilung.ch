@@ -88,6 +88,7 @@ services:
             ADMIN_PASSWORD: ${ADMIN_PASS}
             PUBLIC_URL: https://${PUBLIC_URL}
             CORS_ENABLED: 'true'
+            FLOWS_ENV_ALLOW_LIST: 'BEXIO_API'
         healthcheck:
             test:
                 - CMD
