@@ -2,33 +2,30 @@
 .DS_Store
 
 # Data
-/data/*
-data/*
-/uploads/*
+Backend/data/*
+Backend/my_uploads/*
+Backend/my_extensions/*
+Backend/database/
 
 # Dependencies
-node_modules/
+Web/node_modules/
 
 # Builds / Caches
-dist/
-coverage/
-.histoire/
-*.tsbuildinfo
-**/.vitepress/cache/
-**/.vitepress/.temp/
-.eslintcache
+Web/dist/
 
 # Dotenv configs
-.env
-.env.*
+Web/.env
+Web/.env.*
+Backend/.env
+Backend/.env.*
 
 # Logs
-npm-debug.log
-debug
-.clinic
+Web/npm-debug.log
+Web/debug
+Web/.clinic
+*.log
 
 # IDEs / Editors
-.devcontainer/
 .vscode/*
 !.vscode/extensions.json
 .idea/
@@ -42,16 +39,16 @@ debug
 .netlify
 
 # Temporary files
-TODO
+Web/TODO
 
 # Directus
-*.db
-/schema.yaml
-/schema.json
-/api/uploads/
-/api/extensions/
-/tests/blackbox/uploads/
-/tests/blackbox/server-log-*
-/tests/blackbox/sequencer-data.json
-/packages/extensions-sdk/temp-extension-*/
-/docs/packages/
+Backend/*.db
+Backend/schema.yaml
+Backend/schema.json
+Backend/api/uploads/
+Backend/api/extensions/
+Backend/tests/blackbox/uploads/
+Backend/tests/blackbox/server-log-*
+Backend/tests/blackbox/sequencer-data.json
+Backend/packages/extensions-sdk/temp-extension-*/
+Backend/docs/packages/
